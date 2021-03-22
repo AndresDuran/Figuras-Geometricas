@@ -11,4 +11,13 @@ package co.edu.ucundinamarca.figurasgeometricas;
  */
 public class Figura {
     
+    //Padre
+    
+    public void calcularArea(){
+        System.out.println("Metodo del padre Area");
+    }
+    public void calcularPerimetro(){
+        System.out.println("Metodo del padre Perimetro");
+    }
+    
 }

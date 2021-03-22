@@ -9,6 +9,12 @@ package co.edu.ucundinamarca.figurasgeometricas;
  *
  * @author polux
  */
-public class Triangulo {
+public class Triangulo extends Figura {
+    
+    private float ladoA;
+    private float ladoB;
+    private float ladoC;
+    private float areaTriangulo;
+    private float perimetroTriangulo;
     
 }

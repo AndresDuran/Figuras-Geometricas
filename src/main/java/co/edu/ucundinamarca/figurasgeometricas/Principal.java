@@ -16,8 +16,10 @@ public class Principal {
     }
     
     public void iniciar(){
+        Cuadrado cuadrado = new Cuadrado();
         
-        
+        cuadrado.calcularArea();
+        cuadrado.calcularPerimetro();
     }
     
     public static void main(String[] args) {

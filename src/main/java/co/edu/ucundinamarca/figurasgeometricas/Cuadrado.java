@@ -9,6 +9,12 @@ package co.edu.ucundinamarca.figurasgeometricas;
  *
  * @author polux
  */
-public class Cuadrado {
+public class Cuadrado extends Figura {
+    
+     float lado;
+     float areaCuadrado;
+     float perimetroCuadrado;
+    
+    
     
 }

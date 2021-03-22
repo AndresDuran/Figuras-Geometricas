@@ -9,6 +9,11 @@ package co.edu.ucundinamarca.figurasgeometricas;
  *
  * @author polux
  */
-public class Circulo {
+public class Circulo extends Figura {
+    
+    static final double pi = 3.14159265359;
+    private float radio;
+    private float areaCirculo;
+    private float perimetroCirculo;
     
 }
