@@ -26,17 +26,12 @@ public class Circulo extends Figura {
         radio = entrada.nextFloat();
         areaCirculo = pi * (radio * radio);
         System.out.println("El area del circulo es de: " + areaCirculo);
-        /*lado = entrada.nextFloat();
-        areaCuadrado = lado * lado;
-        System.out.println("El area del cuadrado es de: " + areaCuadrado);*/
     }
     
     @Override
     public void calcularPerimetro(){
         perimetroCirculo = 2 * pi * radio;
         System.out.println("El perimetro del circulo es de: " + perimetroCirculo);
-        /*perimetroCuadrado = 4 * lado;
-        System.out.println("El perimetro del cuadrado es de: " + perimetroCuadrado);*/
     }
 
     

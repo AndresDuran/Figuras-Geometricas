@@ -35,6 +35,12 @@ public class Principal {
             circulo.calcularArea();
             circulo.calcularPerimetro();
         }
+        else if  (opcion == 3){
+            Triangulo triangulo = new Triangulo();
+            
+            triangulo.calcularArea();
+            triangulo.calcularPerimetro();
+        }
         else{
             System.out.println("No valida");
         }
