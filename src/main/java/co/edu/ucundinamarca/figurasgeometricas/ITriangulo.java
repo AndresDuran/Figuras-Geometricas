@@ -9,19 +9,6 @@ package co.edu.ucundinamarca.figurasgeometricas;
  *
  * @author polux
  */
-public class Principal {
-    
-    public Principal() {
-        iniciar();
-    }
-    
-    public void iniciar(){
-        
-        
-    }
-    
-    public static void main(String[] args) {
-        Principal principal = new Principal();
-    }
+public interface ITriangulo {
     
 }
