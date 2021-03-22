@@ -13,4 +13,6 @@ public interface ICirculo {
     
     public void mensajeInformacion();
     
+    public void imprimirInfoDetallada();
+    
 }

@@ -70,6 +70,10 @@ public class Circulo extends Figura {
         //System.out.println("El perimetro del circulo es de: " + perimetroCirculo + "\n");
     }
     
+    public void metodoPropioCirculo(){
+        System.out.println("---Metodo propio de la clase Circulo---");
+    }
+    
     @Override
     public void imprimirInfoDetallada() {
         System.out.println("Area: " + areaCirculo + "\n" + "Perimetro: " + perimetroCirculo + "\n");
@@ -95,16 +99,17 @@ public class Circulo extends Figura {
     public void mensajeInformacion() {
         System.out.println("Mensaje desde la interfaz de ICirculo");
     }
-
-    
-    @Override
-    public void resultados() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     /*
     get y set
     */
+    
+    
+    public static float getPi() {
+        return pi;
+    }
+    
+    
     
     public Scanner getEntrada() {
         return entrada;

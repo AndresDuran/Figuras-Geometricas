@@ -17,4 +17,6 @@ public interface ICuadrado {
     
     public void mensajeInformacion();
     
+    public void imprimirInfoDetallada();
+    
 }

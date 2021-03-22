@@ -10,6 +10,10 @@ package co.edu.ucundinamarca.figurasgeometricas;
  * @author polux
  */
 public interface IResultadosVector {
-    public void resultados();
     
+    public void calcularArea();
+    
+    public void calcularPerimetro();
+    
+    public void imprimirInfoDetallada();
 }

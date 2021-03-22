@@ -123,6 +123,18 @@ public class Triangulo extends Figura {
             //System.out.println("El perimetro del triangulo es de: " + perimetroTriangulo + "\n");
         }
     }
+    
+    public void metodoPropioTriangulo(){
+        System.out.println("---Metodo propio de la clase Triangulo---");
+    }
+
+    public String getTipTri() {
+        return tipTri;
+    }
+
+    public void setTipTri(String tipTri) {
+        this.tipTri = tipTri;
+    }
 
     @Override
     public void imprimirInfoDetallada() {
@@ -153,10 +165,6 @@ public class Triangulo extends Figura {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
-    @Override
-    public void resultados() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     /**
      * geters y seters
      */
@@ -215,6 +223,8 @@ public class Triangulo extends Figura {
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
+
+    
 
     
 

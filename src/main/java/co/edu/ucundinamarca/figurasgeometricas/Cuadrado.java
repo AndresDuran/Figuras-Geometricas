@@ -35,7 +35,19 @@ public class Cuadrado extends Figura{
     */
     @Override
     public void calcularArea(){
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Digite la medida del lado del cuadrado:");
+        /*
+        Asignamos el valor digitado a la varible lado
+        */
+        this.lado = entrada.nextFloat();
+        /*
+        Calculamos el area del cuadrado
+        */
+        this.areaCuadrado = lado * lado;
+        /*
+        Impresion del resultado del area del cuadrado
+        */
+        //System.out.println("El area del cuadrado es de: " + areaCuadrado);
     }
     
     /*
@@ -43,7 +55,14 @@ public class Cuadrado extends Figura{
     */
     @Override
     public void calcularPerimetro(){
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        /*
+        Calculamos directamente el perimetro en base al lado ingresado
+        */
+        this.perimetroCuadrado = 4 * lado;
+        /*
+        Impresion del resultado del perimetro del cuadrado
+        */
+        //System.out.println("El perimetro del cuadrado es de: " + perimetroCuadrado + "\n");
     }
 
     
@@ -76,6 +95,11 @@ public class Cuadrado extends Figura{
         //System.out.println("El perimetro del cuadrado es de: " + perimetroCuadrado + "\n");
     }
     
+    
+    public void metodoPropioCuadrado(){
+        System.out.println("---Metodo propio de la clase Cuadrado---");
+    }
+    
     @Override
     public void imprimirInfoDetallada() {
         System.out.println("Area: " + areaCuadrado + "\n" +
@@ -93,10 +117,7 @@ public class Cuadrado extends Figura{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
-    @Override
-    public void resultados() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     
     /*
     Get y set
@@ -133,6 +154,8 @@ public class Cuadrado extends Figura{
     public void setPerimetroCuadrado(float perimetroCuadrado) {
         this.perimetroCuadrado = perimetroCuadrado;
     }
+
+    
 
     
 
