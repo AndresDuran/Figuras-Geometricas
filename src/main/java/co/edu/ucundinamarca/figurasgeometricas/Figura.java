@@ -10,21 +10,17 @@ package co.edu.ucundinamarca.figurasgeometricas;
  * @author Andres Duran
  * @version 1.0
  */
-public class Figura {
+public abstract class Figura {
     
     //Padre
     
     /*
     Metodo que hace de padre para hacer el calculo de area de las figuras
     */
-    public void calcularArea(){
-        System.out.println("Metodo desde padre Area");
-    }
+    public abstract void calcularArea();
     /*
     Metodo que hace de padre para hacer el calculo de perimetro de las figuras
     */
-    public void calcularPerimetro(){
-        System.out.println("Metodo del padre Perimetro\n");
-    }
+    public abstract void calcularPerimetro();
     
 }

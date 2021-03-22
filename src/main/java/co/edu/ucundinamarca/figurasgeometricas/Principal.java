@@ -20,7 +20,9 @@ public class Principal {
         Inicio inicio = new Inicio();
         inicio.iniciar();
     }
-    
+    /*
+    Metodo main
+    */
     public static void main(String[] args) {
         Principal principal = new Principal();
     }
