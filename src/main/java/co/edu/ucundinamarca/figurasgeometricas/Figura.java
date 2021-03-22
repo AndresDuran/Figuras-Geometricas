@@ -10,16 +10,16 @@ package co.edu.ucundinamarca.figurasgeometricas;
  * @author Andres Duran
  * @version 1.0
  */
-public abstract class Figura {
+public abstract class Figura implements ICirculo, ITriangulo, ICuadrado{
     
     //Padre
     
-    /*
-    Metodo que hace de padre para hacer el calculo de area de las figuras
-    */
+    /**
+     * Metodo para el calculo de area de las figuras
+     */
     public abstract void calcularArea();
     /*
-    Metodo que hace de padre para hacer el calculo de perimetro de las figuras
+    Metodo para el calculo de perimetro de las figuras
     */
     public abstract void calcularPerimetro();
     

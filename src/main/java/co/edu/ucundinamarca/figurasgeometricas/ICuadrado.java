@@ -11,4 +11,10 @@ package co.edu.ucundinamarca.figurasgeometricas;
  */
 public interface ICuadrado {
     
+    public void calcularAreaCuadrado();
+    
+    public void calcularPerimetroCuadrado();
+    
+    public void mensajeInformacion();
+    
 }

@@ -11,4 +11,6 @@ package co.edu.ucundinamarca.figurasgeometricas;
  */
 public interface ICirculo {
     
+    public void mensajeInformacion();
+    
 }

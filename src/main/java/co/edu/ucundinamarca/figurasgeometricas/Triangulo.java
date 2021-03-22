@@ -121,4 +121,90 @@ public class Triangulo extends Figura {
             System.out.println("El perimetro del triangulo es de: " + perimetroTriangulo + "\n");
         }
     }
+
+    
+    @Override
+    public void InfoTriangulo() {
+        System.out.println("Mensaje desde ITriangulo");
+    }
+
+    
+    @Override
+    public void mensajeInformacion() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void calcularAreaCuadrado() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void calcularPerimetroCuadrado() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    /**
+     * geters y seters
+     */
+    public Scanner getEntrada() {
+        return entrada;
+    }
+
+    public void setEntrada(Scanner entrada) {
+        this.entrada = entrada;
+    }
+
+    public float getLadoA() {
+        return ladoA;
+    }
+
+    public void setLadoA(float ladoA) {
+        this.ladoA = ladoA;
+    }
+
+    public float getLadoB() {
+        return ladoB;
+    }
+
+    public void setLadoB(float ladoB) {
+        this.ladoB = ladoB;
+    }
+
+    public float getLadoC() {
+        return ladoC;
+    }
+
+    public void setLadoC(float ladoC) {
+        this.ladoC = ladoC;
+    }
+
+    public float getAreaTriangulo() {
+        return areaTriangulo;
+    }
+
+    public void setAreaTriangulo(float areaTriangulo) {
+        this.areaTriangulo = areaTriangulo;
+    }
+
+    public float getPerimetroTriangulo() {
+        return perimetroTriangulo;
+    }
+
+    public void setPerimetroTriangulo(float perimetroTriangulo) {
+        this.perimetroTriangulo = perimetroTriangulo;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+
+    
+    
+    
+    
 }

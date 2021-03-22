@@ -69,6 +69,29 @@ public class Circulo extends Figura {
         */
         System.out.println("El perimetro del circulo es de: " + perimetroCirculo + "\n");
     }
+    
+    
+    
+    @Override
+    public void InfoTriangulo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
+    @Override
+    public void calcularAreaCuadrado() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void calcularPerimetroCuadrado() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void mensajeInformacion() {
+        System.out.println("Mensaje desde la interfaz de ICirculo");
+    }
 
     /*
     get y set
@@ -105,6 +128,9 @@ public class Circulo extends Figura {
     public void setPerimetroCirculo(float perimetroCirculo) {
         this.perimetroCirculo = perimetroCirculo;
     }
+
+
+    
     
     
     

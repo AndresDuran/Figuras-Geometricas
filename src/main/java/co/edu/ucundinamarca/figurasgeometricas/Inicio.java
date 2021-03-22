@@ -44,8 +44,10 @@ public class Inicio {
                 if (menu == 1){
                     Cuadrado cuadrado = new Cuadrado();
 
-                    cuadrado.calcularArea();
-                    cuadrado.calcularPerimetro();
+                    //cuadrado.calcularArea();
+                    //cuadrado.calcularPerimetro();
+                    cuadrado.calcularAreaCuadrado();
+                    cuadrado.calcularPerimetroCuadrado();
                 }
                 /*
                 Ejecuta la clase circulo
@@ -55,6 +57,7 @@ public class Inicio {
 
                     circulo.calcularArea();
                     circulo.calcularPerimetro();
+                    circulo.mensajeInformacion();
                 }
                 /*
                 Ejecuta la clase triangulo
@@ -64,6 +67,7 @@ public class Inicio {
 
                     triangulo.calcularArea();
                     triangulo.calcularPerimetro();
+                    triangulo.mensajeInformacion();
                 }
                 /*
                 Cambia el valor de la variable y finaliza
