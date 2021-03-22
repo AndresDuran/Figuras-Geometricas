@@ -10,7 +10,7 @@ package co.edu.ucundinamarca.figurasgeometricas;
  * @author Andres Duran
  * @version 1.0
  */
-public abstract class Figura implements ICirculo, ITriangulo, ICuadrado, IResultadosVector{
+public abstract class Figura implements ITriangulo, ICuadrado, IResultadosVector{
     
     //Padre
     
@@ -22,7 +22,9 @@ public abstract class Figura implements ICirculo, ITriangulo, ICuadrado, IResult
     Metodo para el calculo de perimetro de las figuras
     */
     public abstract void calcularPerimetro();
-    
+    /*
+    Metodo de impresion de informacion de los calculos
+    */
     public abstract void imprimirInfoDetallada();
     
 }

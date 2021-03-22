@@ -10,7 +10,9 @@ package co.edu.ucundinamarca.figurasgeometricas;
  * @author polux
  */
 public interface ITriangulo {
-    
+    /*
+    Metodo void que imprime informacion de la clase triangulo
+    */
     public void InfoTriangulo();
     
 }

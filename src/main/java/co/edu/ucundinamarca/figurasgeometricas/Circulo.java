@@ -49,10 +49,6 @@ public class Circulo extends Figura {
         Calculamos el area del circulo
         */
         this.areaCirculo = pi * (radio * radio);
-        /*
-        Impresion del resultado del area del cuadrado
-        */
-        //System.out.println("El area del circulo es de: " + areaCirculo);
     }
     
     /*
@@ -64,21 +60,23 @@ public class Circulo extends Figura {
         Calculamos directamente el perimetro en base al radio ingresado
         */
         this.perimetroCirculo = 2 * pi * radio;
-        /*
-        Impresion del resultado del perimetro del circulo
-        */
-        //System.out.println("El perimetro del circulo es de: " + perimetroCirculo + "\n");
     }
-    
+    /**
+    * Metodo void propio de la clase
+    */
     public void metodoPropioCirculo(){
         System.out.println("---Metodo propio de la clase Circulo---");
     }
-    
+    /**
+    * Metodo de impresion de informacion detallada
+    */
     @Override
     public void imprimirInfoDetallada() {
         System.out.println("Area: " + areaCirculo + "\n" + "Perimetro: " + perimetroCirculo + "\n");
     }
-    
+    /**
+     * Metodo de impresion de informacion
+     */
     @Override
     public void InfoTriangulo() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

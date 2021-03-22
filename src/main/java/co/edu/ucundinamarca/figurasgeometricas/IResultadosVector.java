@@ -6,14 +6,21 @@
 package co.edu.ucundinamarca.figurasgeometricas;
 
 /**
- *
- * @author polux
+ * Clase Interfaz de la clase resultados
+ * @author Andres Duran
+ * @version 2.0
  */
 public interface IResultadosVector {
-    
+    /*
+    Metodo void que calcula los resultados de area del vector
+    */
     public void calcularArea();
-    
+    /*
+    Metodo void que calcula los resultados de perimetro del vector
+    */
     public void calcularPerimetro();
-    
+    /*
+    Metodo void que imprime los resultados del vector
+    */
     public void imprimirInfoDetallada();
 }

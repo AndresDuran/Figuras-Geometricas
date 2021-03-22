@@ -83,7 +83,6 @@ public class Triangulo extends Figura {
         if (tipo == 1){ 
             this.tipTri = "Triangulo Equilatero";
             this.areaTriangulo = (float) ((1.73205/4)*(ladoA * ladoA));
-           // System.out.println("El area del triangulo es de: " + areaTriangulo);
         }
         /*
         Procedemos a calcular e imprimir su area si es isosceles
@@ -93,7 +92,6 @@ public class Triangulo extends Figura {
             //areaTriangulo = (float) ((ladoB* Math.sqrt((ladoA*ladoA)-((ladoB*ladoB)/4)))/2);
             float h = (float) Math.sqrt((ladoA * ladoA)- ((ladoB/2)*(ladoB/2)));
             this.areaTriangulo = ladoB*h/2;
-            //System.out.println("El area del triangulo es de: " + areaTriangulo);
         }
         /*
         Procedemos a calcular e imprimir su area si es escaleno
@@ -102,7 +100,6 @@ public class Triangulo extends Figura {
             this.tipTri = "Triangulo Escaleno";
             float s = (ladoA+ladoB+ladoC)/2;
             this.areaTriangulo =  (float) Math.sqrt(s*(s-ladoA)*(s-ladoB)*(s-ladoC));
-            //System.out.println("El area del triangulo es de: " + areaTriangulo);
         }
     }
     
@@ -112,44 +109,66 @@ public class Triangulo extends Figura {
     */
     @Override
     public void calcularPerimetro(){
+        /**
+         * Por el tipo de clasificacion hecha, calculamos el perimetro de equilatero
+         */
         if (tipo == 1){
             this.perimetroTriangulo = 3 * ladoA;
-            //System.out.println("El perimetro del triangulo es de: " + perimetroTriangulo + "\n");
-        }else if(tipo == 2){
+        }
+        /**
+         * Isosceles
+         */
+        else if(tipo == 2){
             this.perimetroTriangulo = 2 * ladoA + ladoB;
-            //System.out.println("El perimetro del triangulo es de: " + perimetroTriangulo + "\n");
-        }else{
+        }
+        /**
+         * Escaleno
+         */
+        else{
             this.perimetroTriangulo = ladoA + ladoB + ladoC;
-            //System.out.println("El perimetro del triangulo es de: " + perimetroTriangulo + "\n");
         }
     }
     
+    /**
+     * Metodo void propio de la clase
+     */
     public void metodoPropioTriangulo(){
         System.out.println("---Metodo propio de la clase Triangulo---");
     }
-
+    /**
+     * Metodo get para impresion del tipo de triangulo en la impresion final
+     * @return 
+     */
     public String getTipTri() {
         return tipTri;
     }
-
+    /**
+     *Metodo set para impresion del tipo de triangulo en la impresion final
+     */
     public void setTipTri(String tipTri) {
         this.tipTri = tipTri;
     }
-
+    
+    /**
+     * Metodo void de impresion detallada
+     */
     @Override
     public void imprimirInfoDetallada() {
         System.out.println(tipTri + "\n" + "Area: " + areaTriangulo + "\n" +
                 "Perimetro: " + perimetroTriangulo + "\n");
     }
     
-    
+    /**
+     * Metodo void de informacion de interfaz del triangulo
+     */
     @Override
     public void InfoTriangulo() {
         System.out.println("Mensaje desde ITriangulo");
     }
-
     
-    
+    /**
+     * Metodo void de Mensaje de informacion
+     */
     @Override
     public void mensajeInformacion() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

@@ -44,10 +44,6 @@ public class Cuadrado extends Figura{
         Calculamos el area del cuadrado
         */
         this.areaCuadrado = lado * lado;
-        /*
-        Impresion del resultado del area del cuadrado
-        */
-        //System.out.println("El area del cuadrado es de: " + areaCuadrado);
     }
     
     /*
@@ -59,10 +55,6 @@ public class Cuadrado extends Figura{
         Calculamos directamente el perimetro en base al lado ingresado
         */
         this.perimetroCuadrado = 4 * lado;
-        /*
-        Impresion del resultado del perimetro del cuadrado
-        */
-        //System.out.println("El perimetro del cuadrado es de: " + perimetroCuadrado + "\n");
     }
 
     
@@ -77,10 +69,6 @@ public class Cuadrado extends Figura{
         Calculamos el area del cuadrado
         */
         this.areaCuadrado = lado * lado;
-        /*
-        Impresion del resultado del area del cuadrado
-        */
-        //System.out.println("El area del cuadrado es de: " + areaCuadrado);
     }
 
     @Override
@@ -89,23 +77,25 @@ public class Cuadrado extends Figura{
         Calculamos directamente el perimetro en base al lado ingresado
         */
         this.perimetroCuadrado = 4 * lado;
-        /*
-        Impresion del resultado del perimetro del cuadrado
-        */
-        //System.out.println("El perimetro del cuadrado es de: " + perimetroCuadrado + "\n");
     }
     
-    
+     /**
+     * Metodo void propio de la clase
+     */
     public void metodoPropioCuadrado(){
         System.out.println("---Metodo propio de la clase Cuadrado---");
     }
-    
+     /**
+     * Metodo void de impresion de informacion detallada
+     */
     @Override
     public void imprimirInfoDetallada() {
         System.out.println("Area: " + areaCuadrado + "\n" +
                 "Perimetro: "+ perimetroCuadrado + "\n");
     }
-    
+     /**
+     * Metodo void de informacion
+     */
     @Override
     public void InfoTriangulo() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

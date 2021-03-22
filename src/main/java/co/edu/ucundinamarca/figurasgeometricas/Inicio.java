@@ -40,77 +40,33 @@ public class Inicio {
                 System.out.println("Digite 5 para Salir...");
                 int menu = entrada.nextInt();
                 
-                
-                
                 /*
                 Ejecuta la clase cuadrado
                 */
                 if (menu == 1){
-                    //Cuadrado cuadrado = new Cuadrado();
-
-                   
-                    //cuadrado.calcularAreaCuadrado();
-                    //cuadrado.calcularPerimetroCuadrado();
-                    //cuadrado.imprimirInfoDetallada();
-                    
-                    //Figura figura = new Cuadrado();
-                    //figura.calcularAreaCuadrado();
-                    //figura.calcularPerimetroCuadrado();
-                    //figura.imprimirInfoDetallada();
                     
                     IResultadosVector cua = new Cuadrado();
                     cua.calcularArea();
                     cua.calcularPerimetro();
                     cua.imprimirInfoDetallada();
                     
-                    
                     vector[0] = cua;
-                    //ICuadrado cuadro = new Cuadrado();
-                    //cuadro.calcularAreaCuadrado();
-                    //cuadro.calcularPerimetroCuadrado();
-                    //cuadro.imprimirInfoDetallada();
-                    
-                    
                 }
                 /*
                 Ejecuta la clase circulo
                 */
                 else if  (menu == 2){
-                    //Circulo circulo = new Circulo();
-
-                    //circulo.calcularArea();
-                    //circulo.calcularPerimetro();
-                    //circulo.imprimirInfoDetallada();
-                    //circulo.mensajeInformacion();
-                    
-                    //Figura figura2 = new Circulo();
-                    //figura2.calcularArea();
-                    //figura2.calcularPerimetro();
-                    
                     IResultadosVector cir = new Circulo();
                     cir.calcularArea();
                     cir.calcularPerimetro();
                     cir.imprimirInfoDetallada();
                     
                     vector[1] = cir;
-                    
-                    //ICirculo circulo = new Circulo();
-                    //circulo.calcularArea();
-                    //circulo.calcularPerimetro();
-                    //circulo.imprimirInfoDetallada();
-                    //circulo.mensajeInformacion();
-                }
+                    }
                 /*
                 Ejecuta la clase triangulo
                 */
                 else if  (menu == 3){
-                    //Triangulo triangulo = new Triangulo();
-                    
-                    
-                    //triangulo.calcularArea();
-                    //triangulo.calcularPerimetro();
-                    //triangulo.mensajeInformacion();
-                    //triangulo.imprimirInfoDetallada();
                     IResultadosVector tri = new Triangulo();
                     tri.calcularArea();
                     tri.calcularPerimetro();
@@ -128,6 +84,7 @@ public class Inicio {
                         i.calcularPerimetro();
                         i.imprimirInfoDetallada();
                     }
+                    
                 }
                 else if (menu == 5){
                     opcion = 2;
@@ -138,9 +95,6 @@ public class Inicio {
                 else if (menu >5){
                     opcion = 1;
                 }
-            
             }
-            
-            
-        }
+    }
 }
