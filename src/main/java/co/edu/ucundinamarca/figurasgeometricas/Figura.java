@@ -14,7 +14,7 @@ public class Figura {
     //Padre
     
     public void calcularArea(){
-        System.out.println("Metodo del padre Area");
+        System.out.println("Metodo desde padre Area");
     }
     public void calcularPerimetro(){
         System.out.println("Metodo del padre Perimetro");

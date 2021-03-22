@@ -5,16 +5,72 @@
  */
 package co.edu.ucundinamarca.figurasgeometricas;
 
+import java.util.Scanner;
+
 /**
  *
  * @author polux
  */
 public class Cuadrado extends Figura {
     
-     float lado;
-     float areaCuadrado;
-     float perimetroCuadrado;
+    Scanner entrada = new Scanner(System.in);
+    
+    private float lado = entrada.nextFloat();
+    private float areaCuadrado;
+    private float perimetroCuadrado;
+    
+    @Override
+    public void calcularArea(){
+        areaCuadrado = lado * lado;
+        System.out.println("El area del cuadrado es de: " + areaCuadrado);
+    }
     
     
+    @Override
+    public void calcularPerimetro(){
+        perimetroCuadrado = 4 * lado;
+        System.out.println("El perimetro del cuadrado es de: " + perimetroCuadrado);
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public Scanner getEntrada() {
+        return entrada;
+    }
+
+    public void setEntrada(Scanner entrada) {
+        this.entrada = entrada;
+    }
+
+    public float getLado() {
+        return lado;
+    }
+
+    public void setLado(float lado) {
+        this.lado = lado;
+    }
+
+    public float getAreaCuadrado() {
+        return areaCuadrado;
+    }
+
+    public void setAreaCuadrado(float areaCuadrado) {
+        this.areaCuadrado = areaCuadrado;
+    }
+
+    public float getPerimetroCuadrado() {
+        return perimetroCuadrado;
+    }
+
+    public void setPerimetroCuadrado(float perimetroCuadrado) {
+        this.perimetroCuadrado = perimetroCuadrado;
+    }
     
 }
