@@ -8,33 +8,71 @@ package co.edu.ucundinamarca.figurasgeometricas;
 import java.util.Scanner;
 
 /**
- *
- * @author polux
+ * Clase que se encarga de calcular area y perimetro del circulo
+ * @author Andres Duran
+ * @version 1.0
  */
 public class Circulo extends Figura {
     
+    //Declaramos para tomar ñectura por teclado
     Scanner entrada = new Scanner(System.in);
     
+    /*
+    Declaramos esta variable fija para que contenga el valor numerico de pi
+    */
     static final float pi = (float) 3.14159265359;
-    private float radio;
-    private float areaCirculo;
-    private float perimetroCirculo;
+    /*
+    Variable que contendra el valor digitado del radio
+    */
+    private float radio = 0;
+    /*
+    Variable que almacena el resultado del area del circulo
+    */
+    private float areaCirculo = 0;
+    /*
+    Variable que almacena el resultado del perimetro del circulo
+    */
+    private float perimetroCirculo = 0;
     
+    
+    /*
+    Metodo que mejoramos de la herencia donde calculamos el area del circulo
+    */
     @Override
     public void calcularArea(){
         System.out.println("Digite la medida del radio del circulo:");
+        /*
+        Asignamos el valor digitado a la varible lado
+        */
         radio = entrada.nextFloat();
+        /*
+        Calculamos el area del circulo
+        */
         areaCirculo = pi * (radio * radio);
+        /*
+        Impresion del resultado del area del cuadrado
+        */
         System.out.println("El area del circulo es de: " + areaCirculo);
     }
     
+    /*
+    Metodo que mejoramos de la herencia donde calculamos el perimetro del circulo
+    */
     @Override
     public void calcularPerimetro(){
+        /*
+        Calculamos directamente el perimetro en base al radio ingresado
+        */
         perimetroCirculo = 2 * pi * radio;
-        System.out.println("El perimetro del circulo es de: " + perimetroCirculo);
+        /*
+        Impresion del resultado del perimetro del circulo
+        */
+        System.out.println("El perimetro del circulo es de: " + perimetroCirculo + "\n");
     }
 
-    
+    /*
+    get y set
+    */
     
     public Scanner getEntrada() {
         return entrada;

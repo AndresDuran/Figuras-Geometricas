@@ -8,45 +8,17 @@ package co.edu.ucundinamarca.figurasgeometricas;
 import java.util.Scanner;
 
 /**
- *
- * @author polux
+ * Clase de ejecucion de los metodos
+ * @author Andres Duran
+ * @version 1.0
  */
 public class Principal {
-    
+    /*
+    Metodo que invoca clase de inicio
+    */
     public Principal() {
-        iniciar();
-    }
-    
-    public void iniciar(){
-        
-        System.out.println("Digite 1 para cuadrado");
-        Scanner entrada = new Scanner(System.in);
-        int opcion = entrada.nextInt();
-    
-        if (opcion == 1){
-            Cuadrado cuadrado = new Cuadrado();
-            
-            cuadrado.calcularArea();
-            cuadrado.calcularPerimetro();
-        }
-        else if  (opcion == 2){
-            Circulo circulo = new Circulo();
-            
-            circulo.calcularArea();
-            circulo.calcularPerimetro();
-        }
-        else if  (opcion == 3){
-            Triangulo triangulo = new Triangulo();
-            
-            triangulo.calcularArea();
-            triangulo.calcularPerimetro();
-        }
-        else{
-            System.out.println("No valida");
-        }
-        
-        
-        
+        Inicio inicio = new Inicio();
+        inicio.iniciar();
     }
     
     public static void main(String[] args) {

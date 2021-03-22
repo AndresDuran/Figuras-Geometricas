@@ -6,18 +6,25 @@
 package co.edu.ucundinamarca.figurasgeometricas;
 
 /**
- *
- * @author polux
+ * Clase padre de la herencia que contiene los metodos de calcular area y perimetro
+ * @author Andres Duran
+ * @version 1.0
  */
 public class Figura {
     
     //Padre
     
+    /*
+    Metodo que hace de padre para hacer el calculo de area de las figuras
+    */
     public void calcularArea(){
         System.out.println("Metodo desde padre Area");
     }
+    /*
+    Metodo que hace de padre para hacer el calculo de perimetro de las figuras
+    */
     public void calcularPerimetro(){
-        System.out.println("Metodo del padre Perimetro");
+        System.out.println("Metodo del padre Perimetro\n");
     }
     
 }
