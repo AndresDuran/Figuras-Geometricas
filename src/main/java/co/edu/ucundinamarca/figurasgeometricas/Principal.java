@@ -5,6 +5,8 @@
  */
 package co.edu.ucundinamarca.figurasgeometricas;
 
+import java.util.Scanner;
+
 /**
  *
  * @author polux
@@ -16,10 +18,29 @@ public class Principal {
     }
     
     public void iniciar(){
-        Cuadrado cuadrado = new Cuadrado();
         
-        cuadrado.calcularArea();
-        cuadrado.calcularPerimetro();
+        System.out.println("Digite 1 para cuadrado");
+        Scanner entrada = new Scanner(System.in);
+        int opcion = entrada.nextInt();
+    
+        if (opcion == 1){
+            Cuadrado cuadrado = new Cuadrado();
+            
+            cuadrado.calcularArea();
+            cuadrado.calcularPerimetro();
+        }
+        else if  (opcion == 2){
+            Circulo circulo = new Circulo();
+            
+            circulo.calcularArea();
+            circulo.calcularPerimetro();
+        }
+        else{
+            System.out.println("No valida");
+        }
+        
+        
+        
     }
     
     public static void main(String[] args) {

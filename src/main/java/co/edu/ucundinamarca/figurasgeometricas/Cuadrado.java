@@ -15,16 +15,17 @@ public class Cuadrado extends Figura {
     
     Scanner entrada = new Scanner(System.in);
     
-    private float lado = entrada.nextFloat();
+    private float lado;
     private float areaCuadrado;
     private float perimetroCuadrado;
     
     @Override
     public void calcularArea(){
+        System.out.println("Digite la medida del lado del cuadrado:");
+        lado = entrada.nextFloat();
         areaCuadrado = lado * lado;
         System.out.println("El area del cuadrado es de: " + areaCuadrado);
     }
-    
     
     @Override
     public void calcularPerimetro(){
@@ -32,12 +33,6 @@ public class Cuadrado extends Figura {
         System.out.println("El perimetro del cuadrado es de: " + perimetroCuadrado);
     }
 
-    
-    
-    
-    
-    
-    
     
     
     

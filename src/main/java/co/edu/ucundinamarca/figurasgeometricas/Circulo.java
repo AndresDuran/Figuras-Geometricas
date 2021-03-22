@@ -5,15 +5,75 @@
  */
 package co.edu.ucundinamarca.figurasgeometricas;
 
+import java.util.Scanner;
+
 /**
  *
  * @author polux
  */
 public class Circulo extends Figura {
     
-    static final double pi = 3.14159265359;
+    Scanner entrada = new Scanner(System.in);
+    
+    static final float pi = (float) 3.14159265359;
     private float radio;
     private float areaCirculo;
     private float perimetroCirculo;
+    
+    @Override
+    public void calcularArea(){
+        System.out.println("Digite la medida del radio del circulo:");
+        radio = entrada.nextFloat();
+        areaCirculo = pi * (radio * radio);
+        System.out.println("El area del circulo es de: " + areaCirculo);
+        /*lado = entrada.nextFloat();
+        areaCuadrado = lado * lado;
+        System.out.println("El area del cuadrado es de: " + areaCuadrado);*/
+    }
+    
+    @Override
+    public void calcularPerimetro(){
+        perimetroCirculo = 2 * pi * radio;
+        System.out.println("El perimetro del circulo es de: " + perimetroCirculo);
+        /*perimetroCuadrado = 4 * lado;
+        System.out.println("El perimetro del cuadrado es de: " + perimetroCuadrado);*/
+    }
+
+    
+    
+    public Scanner getEntrada() {
+        return entrada;
+    }
+
+    public void setEntrada(Scanner entrada) {
+        this.entrada = entrada;
+    }
+
+    public float getRadio() {
+        return radio;
+    }
+
+    public void setRadio(float radio) {
+        this.radio = radio;
+    }
+
+    public float getAreaCirculo() {
+        return areaCirculo;
+    }
+
+    public void setAreaCirculo(float areaCirculo) {
+        this.areaCirculo = areaCirculo;
+    }
+
+    public float getPerimetroCirculo() {
+        return perimetroCirculo;
+    }
+
+    public void setPerimetroCirculo(float perimetroCirculo) {
+        this.perimetroCirculo = perimetroCirculo;
+    }
+    
+    
+    
     
 }
