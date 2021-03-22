@@ -44,15 +44,15 @@ public class Circulo extends Figura {
         /*
         Asignamos el valor digitado a la varible lado
         */
-        radio = entrada.nextFloat();
+        this.radio = entrada.nextFloat();
         /*
         Calculamos el area del circulo
         */
-        areaCirculo = pi * (radio * radio);
+        this.areaCirculo = pi * (radio * radio);
         /*
         Impresion del resultado del area del cuadrado
         */
-        System.out.println("El area del circulo es de: " + areaCirculo);
+        //System.out.println("El area del circulo es de: " + areaCirculo);
     }
     
     /*
@@ -63,14 +63,17 @@ public class Circulo extends Figura {
         /*
         Calculamos directamente el perimetro en base al radio ingresado
         */
-        perimetroCirculo = 2 * pi * radio;
+        this.perimetroCirculo = 2 * pi * radio;
         /*
         Impresion del resultado del perimetro del circulo
         */
-        System.out.println("El perimetro del circulo es de: " + perimetroCirculo + "\n");
+        //System.out.println("El perimetro del circulo es de: " + perimetroCirculo + "\n");
     }
     
-    
+    @Override
+    public void imprimirInfoDetallada() {
+        System.out.println("Area: " + areaCirculo + "\n" + "Perimetro: " + perimetroCirculo + "\n");
+    }
     
     @Override
     public void InfoTriangulo() {
@@ -93,6 +96,12 @@ public class Circulo extends Figura {
         System.out.println("Mensaje desde la interfaz de ICirculo");
     }
 
+    
+    @Override
+    public void resultados() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
     /*
     get y set
     */
@@ -128,6 +137,12 @@ public class Circulo extends Figura {
     public void setPerimetroCirculo(float perimetroCirculo) {
         this.perimetroCirculo = perimetroCirculo;
     }
+
+    
+
+    
+
+    
 
 
     

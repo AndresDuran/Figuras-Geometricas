@@ -20,27 +20,29 @@ public class Triangulo extends Figura {
     /*
     Declaramos una variable para almacenar el lado 1 del triangulo
     */
-    private float ladoA;
+    private float ladoA = 0;
     /*
     Declaramos una variable para almacenar el lado 2 del triangulo
     */
-    private float ladoB;
+    private float ladoB = 0;
     /*
     Declaramos una variable para almacenar el lado 3 del triangulo
     */
-    private float ladoC;
+    private float ladoC = 0;
     /*
     Variable que almacena el resultado del area del triangulo
     */
-    private float areaTriangulo;
+    private float areaTriangulo = 0;
     /*
     Variable que almacena el resultado del perimetro del triangulo
     */
-    private float perimetroTriangulo;
+    private float perimetroTriangulo = 0;
     /*
     Variable que almacena el resultado del tipo de triangulo en base a los datos de los lados
     */
     private int tipo = 0;
+    
+    String tipTri;
     
     /*
     Metodo que mejoramos de la herencia donde calculamos el area del triangulo
@@ -52,55 +54,55 @@ public class Triangulo extends Figura {
         /*
         Asignamos el primer valor ingresado
         */
-        ladoA = entrada.nextFloat();
+        this.ladoA = entrada.nextFloat();
         System.out.println("Digite la medida del lado B del triangulo:");
         /*
         Asignamos el segundo valor ingresado
         */
-        ladoB = entrada.nextFloat();
+        this.ladoB = entrada.nextFloat();
         System.out.println("Digite la medida del lado C del triangulo:");
         /*
         Asignamos el tercer valor ingresado
         */
-        ladoC = entrada.nextFloat();
+        this.ladoC = entrada.nextFloat();
         
         /*
         validamos que tipo de triangulo
         */
         if (ladoA == ladoB && ladoB == ladoC){
-            tipo = 1;//Equilatero
+            this.tipo = 1;//Equilatero
         }else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC){
-            tipo = 2;//Isosceles
+            this.tipo = 2;//Isosceles
         }else if (ladoA != ladoB || ladoA != ladoC || ladoC != ladoB){
-            tipo = 3;//Escaleno
+            this.tipo = 3;//Escaleno
         }
         
         /*
         Procedemos a calcular e imprimir su area si es equilatero
         */
         if (tipo == 1){ 
-            System.out.println("Triangulo Equilatero");
-            areaTriangulo = (float) ((1.73205/4)*(ladoA * ladoA));
-            System.out.println("El area del triangulo es de: " + areaTriangulo);
+            this.tipTri = "Triangulo Equilatero";
+            this.areaTriangulo = (float) ((1.73205/4)*(ladoA * ladoA));
+           // System.out.println("El area del triangulo es de: " + areaTriangulo);
         }
         /*
         Procedemos a calcular e imprimir su area si es isosceles
         */
         else if(tipo == 2){
-            System.out.println("Triangulo Isosceles");
+            this.tipTri = "Triangulo Isosceles";
             //areaTriangulo = (float) ((ladoB* Math.sqrt((ladoA*ladoA)-((ladoB*ladoB)/4)))/2);
             float h = (float) Math.sqrt((ladoA * ladoA)- ((ladoB/2)*(ladoB/2)));
-            areaTriangulo = ladoB*h/2;
-            System.out.println("El area del triangulo es de: " + areaTriangulo);
+            this.areaTriangulo = ladoB*h/2;
+            //System.out.println("El area del triangulo es de: " + areaTriangulo);
         }
         /*
         Procedemos a calcular e imprimir su area si es escaleno
         */
         else if(tipo == 3){
-            System.out.println("Triangulo Escaleno");
+            this.tipTri = "Triangulo Escaleno";
             float s = (ladoA+ladoB+ladoC)/2;
-            areaTriangulo =  (float) Math.sqrt(s*(s-ladoA)*(s-ladoB)*(s-ladoC));
-            System.out.println("El area del triangulo es de: " + areaTriangulo);
+            this.areaTriangulo =  (float) Math.sqrt(s*(s-ladoA)*(s-ladoB)*(s-ladoC));
+            //System.out.println("El area del triangulo es de: " + areaTriangulo);
         }
     }
     
@@ -111,23 +113,30 @@ public class Triangulo extends Figura {
     @Override
     public void calcularPerimetro(){
         if (tipo == 1){
-            perimetroTriangulo = 3 * ladoA;
-            System.out.println("El perimetro del triangulo es de: " + perimetroTriangulo + "\n");
+            this.perimetroTriangulo = 3 * ladoA;
+            //System.out.println("El perimetro del triangulo es de: " + perimetroTriangulo + "\n");
         }else if(tipo == 2){
-            perimetroTriangulo = 2 * ladoA + ladoB;
-            System.out.println("El perimetro del triangulo es de: " + perimetroTriangulo + "\n");
+            this.perimetroTriangulo = 2 * ladoA + ladoB;
+            //System.out.println("El perimetro del triangulo es de: " + perimetroTriangulo + "\n");
         }else{
-            perimetroTriangulo = ladoA + ladoB + ladoC;
-            System.out.println("El perimetro del triangulo es de: " + perimetroTriangulo + "\n");
+            this.perimetroTriangulo = ladoA + ladoB + ladoC;
+            //System.out.println("El perimetro del triangulo es de: " + perimetroTriangulo + "\n");
         }
     }
 
+    @Override
+    public void imprimirInfoDetallada() {
+        System.out.println(tipTri + "\n" + "Area: " + areaTriangulo + "\n" +
+                "Perimetro: " + perimetroTriangulo + "\n");
+    }
+    
     
     @Override
     public void InfoTriangulo() {
         System.out.println("Mensaje desde ITriangulo");
     }
 
+    
     
     @Override
     public void mensajeInformacion() {
@@ -144,6 +153,10 @@ public class Triangulo extends Figura {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
+    @Override
+    public void resultados() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     /**
      * geters y seters
      */
@@ -202,6 +215,10 @@ public class Triangulo extends Figura {
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
+
+    
+
+    
 
     
     

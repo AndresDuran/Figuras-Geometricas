@@ -53,15 +53,15 @@ public class Cuadrado extends Figura{
         /*
         Asignamos el valor digitado a la varible lado
         */
-        lado = entrada.nextFloat();
+        this.lado = entrada.nextFloat();
         /*
         Calculamos el area del cuadrado
         */
-        areaCuadrado = lado * lado;
+        this.areaCuadrado = lado * lado;
         /*
         Impresion del resultado del area del cuadrado
         */
-        System.out.println("El area del cuadrado es de: " + areaCuadrado);
+        //System.out.println("El area del cuadrado es de: " + areaCuadrado);
     }
 
     @Override
@@ -69,13 +69,18 @@ public class Cuadrado extends Figura{
         /*
         Calculamos directamente el perimetro en base al lado ingresado
         */
-        perimetroCuadrado = 4 * lado;
+        this.perimetroCuadrado = 4 * lado;
         /*
         Impresion del resultado del perimetro del cuadrado
         */
-        System.out.println("El perimetro del cuadrado es de: " + perimetroCuadrado + "\n");
+        //System.out.println("El perimetro del cuadrado es de: " + perimetroCuadrado + "\n");
     }
     
+    @Override
+    public void imprimirInfoDetallada() {
+        System.out.println("Area: " + areaCuadrado + "\n" +
+                "Perimetro: "+ perimetroCuadrado + "\n");
+    }
     
     @Override
     public void InfoTriangulo() {
@@ -85,6 +90,11 @@ public class Cuadrado extends Figura{
 
     @Override
     public void mensajeInformacion() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    @Override
+    public void resultados() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
@@ -123,6 +133,10 @@ public class Cuadrado extends Figura{
     public void setPerimetroCuadrado(float perimetroCuadrado) {
         this.perimetroCuadrado = perimetroCuadrado;
     }
+
+    
+
+    
 
 
     

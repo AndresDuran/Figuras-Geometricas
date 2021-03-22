@@ -17,7 +17,7 @@ public class Inicio {
     Metodo que contiene todo el menu de ejecucion del programa
     */
     public void iniciar(){
-            //Declaramos para tomar ñectura por teclado
+            //Declaramos para tomar lectura por teclado
             Scanner entrada = new Scanner(System.in);
             /*
             Variable de control del menu
@@ -44,10 +44,14 @@ public class Inicio {
                 if (menu == 1){
                     Cuadrado cuadrado = new Cuadrado();
 
-                    //cuadrado.calcularArea();
-                    //cuadrado.calcularPerimetro();
+                   
                     cuadrado.calcularAreaCuadrado();
                     cuadrado.calcularPerimetroCuadrado();
+                    cuadrado.imprimirInfoDetallada();
+                    
+                    //IResultadosVector cuadrado = new Cuadrado();
+                    
+                    
                 }
                 /*
                 Ejecuta la clase circulo
@@ -57,6 +61,7 @@ public class Inicio {
 
                     circulo.calcularArea();
                     circulo.calcularPerimetro();
+                    circulo.imprimirInfoDetallada();
                     circulo.mensajeInformacion();
                 }
                 /*
@@ -64,10 +69,12 @@ public class Inicio {
                 */
                 else if  (menu == 3){
                     Triangulo triangulo = new Triangulo();
-
+                    
+                    
                     triangulo.calcularArea();
                     triangulo.calcularPerimetro();
-                    triangulo.mensajeInformacion();
+                    //triangulo.mensajeInformacion();
+                    triangulo.imprimirInfoDetallada();
                 }
                 /*
                 Cambia el valor de la variable y finaliza
@@ -83,5 +90,7 @@ public class Inicio {
                 }
             
             }
+            
+            
         }
 }
